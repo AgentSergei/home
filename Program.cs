@@ -33,31 +33,51 @@ Console.WriteLine("max = " + max + " и " + "min = " + min);
 Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 */
 
-int max = 0;
+int maxN = 0;
 
 Console.WriteLine("Найти максимальное из трех чисел");
 
 Console.Write("Первое число: ");
-int first = Convert.ToInt32(Console.ReadLine());
+int firstN = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Второе число: ");
-int second = Convert.ToInt32(Console.ReadLine());
+int secondN = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Третье число: ");
-int third = Convert.ToInt32(Console.ReadLine());
+int thirdN = Convert.ToInt32(Console.ReadLine());
 
-if(first > max)
+if(firstN > maxN)
 {
-    max = first;
+    maxN = firstN;
 }
-if(second > max)
+if(second > maxN)
 {
-    max = second;
+    maxN = secondN;
 }
-if(third > max)
+if(thirdN > maxN)
 {
-    max = third;
+    maxN = thirdN;
 }
 
-Console.WriteLine("max = " + max);
+Console.WriteLine("max = " + maxN);
+
+
+//Четность до N
+
+Console.WriteLine("8 -> 2, 4, 6, 8");
+
+Console.Write("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+int chetnoe = 2;
+
+if(number > 1)
+{
+    while(chetnoe <= number)
+    {
+        Console.Write(chetnoe + " ");
+        chetnoe = chetnoe + 2;
+    }
+}
+
 
